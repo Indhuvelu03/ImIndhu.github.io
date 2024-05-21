@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indhu's portfolio</title>
+    <link rel="stylesheet" href="portlolio.css">
+</head>
+<body>
+    <header>
+        <h1>Indhufolio</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="homeimg">
+                <img src="indhu.jpg" alt="">
+            </div>
+            <div class="home-content">
+                <h1>Its <span>IndhuVelu</span></span></h1>
+                <h3 class="text-animation">I'm a<span> B.Tech-IT Student</span></h3>
+                <p> I am a studing Engineering in b.tech-IT.I have lots of interest in frontend 
+                    development.I am beginner in frontend development and i started to improve my knowledge.</p>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="skillhead">
+                <h1>Skills</h1>
+                </div>
+            <div class="skillp">
+                <h4>These are things that I have been skilled at.</h4>
+            </div>
+            <div class="skill-container">
+            <div class="sbox">
+                <h3>Frontend skills</h3>
+                <div class="ssb">
+                     <img src="" alt="">
+                    <h3><span>HTML</span></h3>
+                </div>
+                <div class="ssb">
+                    <img src="" alt="">
+                    <h3><span>CSS</span></h3>
+                </div>
+                <div class="ssb">
+                    <img src="" alt="">
+                    <h3><span>JAVA SCRPIT</span></h3>
+                </div>
+            </div>
+            <div class="sbox">
+                <h3>Other skills</h3>
+                <div class="ssb">
+                     <img src="" alt="">
+                     <h3><span>PYTHON</span></h3>
+                </div>
+                <div class="ssb">
+                    <img src="" alt="">
+                    <h3><span>JAVA</span></h2>
+                </div>
+                <div class="ssb">
+                    <img src="" alt="">
+                    <h3><span>C++</span></h3>
+                </div>
+            </div>
+        </div> 
+        <div class="skillp">
+        <p>These skills enabled me to successfully bulid many web pages and I have also  strong in the basics of the python,java,
+            and C++ and <br>also started to learn IOT.
+        </p>
+        </div>
+    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Indhu, a passionate web developer with a knack for
+                 creating elegant and functional websites. I am IT student .Studing B.Tech-IT in affilated college of Anna University.
+                 I enjoy transforming ideas into reality through code.</p>
+                 <div class="profile">
+                    <div class="profile-image">
+                      <img src="indhu.jpg" alt="Profile Picture">
+                    </div>
+                    <div class="profile-details">
+                      <h2>My Skills & Experience</h2>
+                      <p>As I am a student studing 2nd year ,I dont have any experiences through out this.These are the 
+                        skills that I have been skilled at.<br>the skills are listed below:  </p>
+                      <ul>
+                        <h3><li>HTML, CSS, JavaScript</li></h3>
+                        <h3><li>Node.js</li></h3>
+                        <h3><li>Python</li><h3>
+                        <h3><li>C++</li><h3>
+
+                      </ul>
+                    </div>
+                </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="gallery" class="gallery">
+                <!-- Gallery images will be inserted here dynamically -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-form">
+            <form action="submit_form.php" method="post" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </section>
+    </main>
+    <script src="portfolio.js"></script>
+</body>
+</html>
